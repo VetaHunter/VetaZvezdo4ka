@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: backgroundAAAA 5s linear infinite alternate;
+  overflow: hidden;
+}
+
+.text {
+  animation: text 5s linear infinite alternate;
+  font-size: 100px;
+}
+
+@keyframes backgroundAAAA {
+  0% {
+    background-color: rgb(7, 7, 99);
+  }
+  100% {
+    background-color: rgb(255, 0, 179);
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: perspective(500px) rotateX(0deg) rotate(5deg);
+    color: rgb(255, 0, 179);
+  }
+  100% {
+    color: yellow;
+    transform: perspective(50px) rotateX(360deg) rotate(5deg);
+  }
+}
